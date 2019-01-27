@@ -1,8 +1,9 @@
 
+My Webpack-React-Babel BolierPlate
 
-
-
-
+Webpack - 4,
+React - 16,
+Babel - 7
 
 Info for packages installed in this project:
 Webpack:
@@ -13,6 +14,7 @@ Webpack:
     -> webpack-dev-server
         - used so that when we make a change to a file inside our new app, we won’t need to refresh the page. It refreshes the browser page automatically every time we change a file in our app
         - as its name says, it’s a server that is working non-stop
+
 
 Babel: tell Webpack how to compile our React code.
     -> @babel/core
@@ -26,6 +28,7 @@ Babel: tell Webpack how to compile our React code.
     -> babel-loader
         — this is a Webpack helper that transforms your JavaScript dependencies with Babel (i.e. will transform the import statements into require ones)
 
+
 CSS & SCSS:
     -> style-loader
         — this will add to the DOM the styles (will inject a <style> tag inside the HTML file)
@@ -35,6 +38,7 @@ CSS & SCSS:
         — will let us import SCSS files into our project
     -> node-sass
         — will compile the SCSS files into normal CSS files
+
 
 
 Below is the explanation of webpack config:
