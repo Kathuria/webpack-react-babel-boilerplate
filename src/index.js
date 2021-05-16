@@ -4,7 +4,7 @@ import "index.scss";
 
 let HelloWorld = () => {
   return <Fragment>
-      <div>Hello to React World</div>
+      <div>Hello to Webpack World</div>
       <br/>
       <span>@</span>
       <img src="./images/AK_logo.jpg" style={{width:'300px', height:'200px'}}/>

@@ -1,13 +1,7 @@
-import path from 'path';
-
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.join(__dirname,'src','index.js'),
-  output: {
-    path: path.join(__dirname,'build'),
-    filename: 'index.bundle.js'
-  },
   mode: process.env.NODE_ENV || 'development',
   resolve: {
     modules: [path.resolve(__dirname, 'src'), 'node_modules']
@@ -35,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
-        loaders: ['file-loader']
+        use: ['file-loader']
       }
     ]
   },
